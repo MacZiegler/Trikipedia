@@ -9,13 +9,52 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <style>
+    /*I think there may be a more bootstrappy way to do this, maybe a utility?*/
+
+    @media (min-width: 250px) {
+      .sidebar {
+        max-width: 175px;
+      }
+    }
+
+    ul li a {
+      color: #0645ad;
+    }
+
+    a:visited {
+      color: #0b0080;
+    }
+
+
+    .mainlogo {
+      width: 132px;
+      height: 132px;
+      margin: 4px 7px 12px 7px;
+    }
+
+    .sidebar .nav-link {
+      font-size: 0.7em;
+      line-height: 0.4em;
+      margin-left: -0.25em;
+      margin-right: -0.5em;
+    }
+
+    .subtitle {
+      display: block;
+      font-size: 0.7em;
+      padding-top: 1.25em;
+      padding-bottom: 0.5em;
+      margin-left: 1.25em;
+      color: #444444;
+    }
+
     .graygradient {
       background: linear-gradient(180deg, #ffffff 50%, #f9f9f9 100%);
     }
 
     .grayback {
       background: #f9f9f9;
-      border: 1px solid #dddddd;
+      /*border: 1px solid #dddddd;*/
     }
 
     .greenback {
@@ -80,120 +119,120 @@
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-sm-2 grayback hidden-xs" style="background:#f9f9f9; width:10rem; height:100% ">
+      <div class="col-sm-2 grayback hidden-xs sidebar h-100" style="background:#f9f9f9">
         <div>
           <p></p>
-          <a href="#"><img src="TrikiGlobesm.png"></a>
+          <a href="#"><img src="TrikiGlobesm.png" alt="Trikipedia Logo" class="mainlogo"/></a>
           <p></p>
         </div>
 
         <div>
-          <ul>
-            <li><a href="#">Main page</a></li>
-            <li><a href="#">Contents</a></li>
-            <li><a href="#">Featured content</a></li>
-            <li><a href="#">Current events</a></li>
-            <li><a href="#">Random article</a></li>
-            <li><a href="#">Donate to Wikipedia</a></li>
-            <li><a href="#">Wikipedia store</a></li>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">Main page</a></li>
+            <li><a href="#" class="nav-link">Contents</a></li>
+            <li><a href="#" class="nav-link">Featured content</a></li>
+            <li><a href="#" class="nav-link">Current events</a></li>
+            <li><a href="#" class="nav-link">Random article</a></li>
+            <li><a href="#" class="nav-link">Donate to Wikipedia</a></li>
+            <li><a href="#" class="nav-link">Wikipedia store</a></li>
           </ul>
         </div>
         <div>
-          Interaction
-          <ul>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">About Wikipedia</a></li>
-            <li><a href="#">Community portal</a></li>
-            <li><a href="#">Recent changes</a></li>
-            <li><a href="#">Contact page</a></li>
+          <span class="subtitle">Interaction</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">Help</a></li>
+            <li><a href="#" class="nav-link">About Wikipedia</a></li>
+            <li><a href="#" class="nav-link">Community portal</a></li>
+            <li><a href="#" class="nav-link">Recent changes</a></li>
+            <li><a href="#" class="nav-link">Contact page</a></li>
           </ul>
         </div>
         <div>
-          Tools
-          <ul>
-            <li><a href="#">What links here</a></li>
-            <li><a href="#">Related changes</a></li>
-            <li><a href="#">Upload file</a></li>
-            <li><a href="#">Special pages</a></li>
-            <li><a href="#">Permanent link</a></li>
-            <li><a href="#">Page information</a></li>
-            <li><a href="#">Wikidata item</a></li>
+          <span class="subtitle">Tools</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">What links here</a></li>
+            <li><a href="#" class="nav-link">Related changes</a></li>
+            <li><a href="#" class="nav-link">Upload file</a></li>
+            <li><a href="#" class="nav-link">Special pages</a></li>
+            <li><a href="#" class="nav-link">Permanent link</a></li>
+            <li><a href="#" class="nav-link">Page information</a></li>
+            <li><a href="#" class="nav-link">Wikidata item</a></li>
           </ul>
         </div>
         <div>
-          Print/export
-          <ul>
-            <li><a href="#">Create a book</a></li>
-            <li><a href="#">Download as PDF</a></li>
-            <li><a href="#">Printable version</a></li>
+          <span class="subtitle">Print/export</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">Create a book</a></li>
+            <li><a href="#" class="nav-link">Download as PDF</a></li>
+            <li><a href="#" class="nav-link">Printable version</a></li>
           </ul>
         </div>
         <div>
-          In other projects
-          <ul>
-            <li><a href="#">Wikimedia Commons</a></li>
-            <li><a href="#">MediaWiki</a></li>
-            <li><a href="#">Meta-Wiki</a></li>
-            <li><a href="#">Wikispecies</a></li>
-            <li><a href="#">Wikibooks</a></li>
-            <li><a href="#">Wikidata</a></li>
-            <li><a href="#">Wikinews</a></li>
-            <li><a href="#">Wikiquote</a></li>
-            <li><a href="#">Wikisource</a></li>
-            <li><a href="#">Wikiversity</a></li>
-            <li><a href="#">Wikivoyage</a></li>
-            <li><a href="#">Wiktionary</a></li>
+          <span class="subtitle">In other projects</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">Wikimedia Commons</a></li>
+            <li><a href="#" class="nav-link">MediaWiki</a></li>
+            <li><a href="#" class="nav-link">Meta-Wiki</a></li>
+            <li><a href="#" class="nav-link">Wikispecies</a></li>
+            <li><a href="#" class="nav-link">Wikibooks</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Wikidata</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Wikinews</a></li>
+            <li><a href="#" class="nav-link">Wikiquote</a></li>
+            <li><a href="#" class="nav-link">Wikisource</a></li>
+            <li><a href="#" class="nav-link">Wikiversity</a></li>
+            <li><a href="#" class="nav-link">Wikivoyage</a></li>
+            <li><a href="#" class="nav-link">Wiktionary</a></li>
           </ul>
         </div>
         <div>
-          Languages
-          <ul>
-            <li><a href="#">العربية</a></li>
-            <li><a href="#">Български</a></li>
-            <li><a href="#">Bosanski</a></li>
-            <li><a href="#">Català</a></li>
-            <li><a href="#">Čeština</a></li>
-            <li><a href="#">Dansk</a></li>
-            <li><a href="#">Deutsch</a></li>
-            <li><a href="#">Eesti</a></li>
-            <li><a href="#">Ελληνικά</a></li>
-            <li><a href="#">Español</a></li>
-            <li><a href="#">Esperanto</a></li>
-            <li><a href="#">Euskara</a></li>
-            <li><a href="#">فارسی</a></li>
-            <li><a href="#">Français</a></li>
-            <li><a href="#">Galego</a></li>
-            <li><a href="#">한국어</a></li>
-            <li><a href="#">Hrvatski</a></li>
-            <li><a href="#">Bahasa Indonesia</a></li>
-            <li><a href="#">Italiano</a></li>
-            <li><a href="#">עברית</a></li>
-            <li><a href="#">ქართული</a></li>
-            <li><a href="#">Latviešu</a></li>
-            <li><a href="#">Lietuvių</a></li>
-            <li><a href="#">Magyar</a></li>
-            <li><a href="#">Bahasa Melayu</a></li>
-            <li><a href="#">Nederlands</a></li>
-            <li><a href="#">日本語</a></li>
-            <li><a href="#">Norsk</a></li>
-            <li><a href="#">Norsk nynorsk</a></li>
-            <li><a href="#">Polski</a></li>
-            <li><a href="#">Português</a></li>
-            <li><a href="#">Română</a></li>
-            <li><a href="#">Русский</a></li>
-            <li><a href="#">Simple English</a></li>
-            <li><a href="#">Slovenčina</a></li>
-            <li><a href="#">Slovenščina</a></li>
-            <li><a href="#">Српски / srpski</a></li>
-            <li><a href="#">Srpskohrvatski / српскохрватски</a></li>
-            <li><a href="#">Suomi</a></li>
-            <li><a href="#">Svenska</a></li>
-            <li><a href="#">ไทย</a></li>
-            <li><a href="#">Türkçe</a></li>
-            <li><a href="#">Українська</a></li>
-            <li><a href="#">Tiếng Việt</a></li>
-            <li><a href="#">中文</a></li>
-            <li><a href="#">Complete list</a></li>
+          <span class="subtitle">Languages</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">العربية</a></li>
+            <li><a href="#" class="nav-link">Български</a></li>
+            <li><a href="#" class="nav-link">Bosanski</a></li>
+            <li><a href="#" class="nav-link">Català</a></li>
+            <li><a href="#" class="nav-link">Čeština</a></li>
+            <li><a href="#" class="nav-link">Dansk</a></li>
+            <li><a href="#" class="nav-link">Deutsch</a></li>
+            <li><a href="#" class="nav-link">Eesti</a></li>
+            <li><a href="#" class="nav-link">Ελληνικά</a></li>
+            <li><a href="#" class="nav-link">Español</a></li>
+            <li><a href="#" class="nav-link">Esperanto</a></li>
+            <li><a href="#" class="nav-link">Euskara</a></li>
+            <li><a href="#" class="nav-link">فارسی</a></li>
+            <li><a href="#" class="nav-link">Français</a></li>
+            <li><a href="#" class="nav-link">Galego</a></li>
+            <li><a href="#" class="nav-link">한국어</a></li>
+            <li><a href="#" class="nav-link">Hrvatski</a></li>
+            <li><a href="#" class="nav-link">Bahasa Indonesia</a></li>
+            <li><a href="#" class="nav-link">Italiano</a></li>
+            <li><a href="#" class="nav-link">עברית</a></li>
+            <li><a href="#" class="nav-link">ქართული</a></li>
+            <li><a href="#" class="nav-link">Latviešu</a></li>
+            <li><a href="#" class="nav-link">Lietuvių</a></li>
+            <li><a href="#" class="nav-link">Magyar</a></li>
+            <li><a href="#" class="nav-link">Bahasa Melayu</a></li>
+            <li><a href="#" class="nav-link">Nederlands</a></li>
+            <li><a href="#" class="nav-link">日本語</a></li>
+            <li><a href="#" class="nav-link">Norsk</a></li>
+            <li><a href="#" class="nav-link">Norsk nynorsk</a></li>
+            <li><a href="#" class="nav-link">Polski</a></li>
+            <li><a href="#" class="nav-link">Português</a></li>
+            <li><a href="#" class="nav-link">Română</a></li>
+            <li><a href="#" class="nav-link">Русский</a></li>
+            <li><a href="#" class="nav-link">Simple English</a></li>
+            <li><a href="#" class="nav-link">Slovenčina</a></li>
+            <li><a href="#" class="nav-link">Slovenščina</a></li>
+            <li><a href="#" class="nav-link">Српски / srpski</a></li>
+            <li><a href="#" class="nav-link">Srpskohrvatski / српскохрватски</a></li>
+            <li><a href="#" class="nav-link">Suomi</a></li>
+            <li><a href="#" class="nav-link">Svenska</a></li>
+            <li><a href="#" class="nav-link">ไทย</a></li>
+            <li><a href="#" class="nav-link">Türkçe</a></li>
+            <li><a href="#" class="nav-link">Українська</a></li>
+            <li><a href="#" class="nav-link">Tiếng Việt</a></li>
+            <li><a href="#" class="nav-link">中文</a></li>
+            <li><a href="#" class="nav-link">Complete list</a></li>
           </ul>
         </div>
       </div>
