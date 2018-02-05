@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <style>
-    /*I think there may be a more bootstrappy way to do this, maybe a utility?*/
+    /*I think there may be a more bootstrappy way to do this, maybe a utility???*/
 
     @media (min-width: 250px) {
       .sidebar {
@@ -33,7 +33,7 @@
     }
 
     .sidebar .nav-link {
-      font-size: 0.7em;
+      font-size: 0.72em;
       line-height: 0.4em;
       margin-left: -0.25em;
       margin-right: -0.5em;
@@ -41,11 +41,31 @@
 
     .subtitle {
       display: block;
-      font-size: 0.7em;
+      font-size: 0.72em;
       padding-top: 1.25em;
       padding-bottom: 0.5em;
       margin-left: 1.25em;
       color: #444444;
+    }
+
+    .topnav {
+      font-size: 0.72em;
+    }
+
+    .topnav .nav-link:first-child {
+      padding-left: 1.0em;
+    }
+
+    .topnav .nav-link:last-child {
+      padding-right: 1.0em;
+    }
+
+    .tabnav {
+      font-size: 0.85em;
+    }
+    .tabpad {
+      margin: 1.0em 0 0 0;
+      padding: 1.0em 0.5em 0em 0.5em;
     }
 
     .graygradient {
@@ -175,8 +195,8 @@
             <li><a href="#" class="nav-link">Meta-Wiki</a></li>
             <li><a href="#" class="nav-link">Wikispecies</a></li>
             <li><a href="#" class="nav-link">Wikibooks</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Wikidata</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Wikinews</a></li>
+            <li><a href="#" class="nav-link">Wikidata</a></li>
+            <li><a href="#" class="nav-link">Wikinews</a></li>
             <li><a href="#" class="nav-link">Wikiquote</a></li>
             <li><a href="#" class="nav-link">Wikisource</a></li>
             <li><a href="#" class="nav-link">Wikiversity</a></li>
@@ -237,13 +257,13 @@
         </div>
       </div>
 
-      <div class="col-sm-10 ">
+      <div class="col-sm-10 pr-0">
         <div class="row ">
 
-          <div class="col-sm-12 graygradient">
+          <div class="col-sm-12 graygradient pr-0">
             <div class="row">
-              <div class="col-sm-12">
-                <ul class="nav justify-content-end">
+              <div class="col-sm-12 topnav pr-0">
+                <ul class="nav justify-content-end" style="margin:0; padding:0">
                   <span class="navbar-text"><span class="glyphicon glyphicon-user"></span> Not logged in</span>
                   <li class="nav-item"><a href="#" class="nav-link">Talk</a></li>
                   <li class="nav-item"><a href="#" class="nav-link">Contributions</a></li>
@@ -254,8 +274,22 @@
             </div>
 
             <div class="row ">
-              <div class="col-sm-12 ">
-                <p>Tabs Here</p>
+              <div class="col-sm-12 tabnav">
+                <!--<p>Tabs Here</p>-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item"><a class="nav-link tabpad active" href="#">Main Page</a></li>
+                  <li class="nav-item mr-auto"><a class="nav-link tabpad" href="#">Talk</a></li>
+                  <li class="nav-item"><a class="nav-link tabpad" href="#">Read</a></li>
+                  <li class="nav-item"><a class="nav-link tabpad" href="#">View Source</a></li>
+                  <li class="nav-item"><a class="nav-link tabpad" href="#">View History</a></li>
+                  <li class="nav-item">
+                    <form>
+                      <div class="form-inline">
+                        <input type="text" class="form-control tabpad" id="srch" placeholder="Search Trikipedia">
+                      </div>
+                    </form>
+                  </li>
+                </ul>
               </div>
             </div>
 
