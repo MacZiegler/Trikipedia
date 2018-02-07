@@ -18,7 +18,7 @@
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-sm-2 grayback hidden-sm-down sidebar h-100" style="background:#f9f9f9">
+      <div class="col-sm-2 grayback hidden-xs sidebar h-100" style="background:#f9f9f9">
         <div>
           <p></p>
           <a href="#"><img src="TrikiGlobeSmall.svg" alt="Trikipedia Logo" class="mainlogo"/></a>
@@ -180,7 +180,7 @@
                   <div class="col-sm-12">
                     <div class="row welcome section">
                       <div class="col-sm-4">
-                        <div class="container text-center">
+                        <div class="container float-left text-center" style="width: 20em">
                           <div style="font-size:150%; padding:.1em;">
                             Welcome to <a href="#">Trikipedia</a>,
                           </div>
@@ -261,26 +261,65 @@
                           from seven predominantly Muslim countries would “unleash chaos again.”</li>
                         <li><a href="#" title="2018">2018</a> – The <strong><a href="#" title="Wikipedia Rebuild">Wikipedia Rebuild</a></strong> was due on Tuesday, February 7, 2018 at 11:55 pm, Central time.</li>
                         </ul>
-                        <p><strong><a href="#" title="Bartholomäus Sastrow">Bartholomäus Sastrow</a></strong> (d.&#160;1603)&#160;<strong>·</strong> <strong><a href="#" title="Desmond Doss">Desmond Doss</a></strong> (b.&#160;1919)&#160;<strong>·</strong>                          <strong><a href="#" title="Steve Nash">Steve Nash</a></strong> (b.&#160;1974)</p>
+                        <p>
+                          <strong><a href="#" title="Bartholomäus Sastrow">Bartholomäus Sastrow</a></strong> (d.&#160;1603)&#160;<strong>·</strong>
+                          <strong><a href="#" title="Desmond Doss">Desmond Doss</a></strong> (b.&#160;1919)&#160;<strong>·</strong>
+                          <strong><a href="#" title="Steve Nash">Steve Nash</a></strong> (b.&#160;1974)
+                        </p>
                       </div>
                     </div>
                     <div class="row ">
                       <div class="col-sm-12 pinkback section ">
                         <h2 class="pinkbox header ">From today's featured list</h2>
-                        <p>Pink Column Content</p>
-                        <p>Pink Column Content</p>
+                        <p>This has been an interesting exercise. The Wikipedia main page is not built on Bootstrap, so getting close enough to the main page exact layout is a challenge. In building the page Bootstrap style, I chose not to use the exact
+                          techniques employed by Wikipedia. One of my goals for this page was responsiveness; I wanted the page to transition smoothly from small mobile screen to giant monitor. Unsurprisingly, this turns out to be far easier said than
+                          done.
+                        </p>
+                        <p>I wanted to use the page for more than just a class assignment, so I renamed the project Trikipedia, then created new article material and new graphics. It rather feels like an exercise in replicating the master paintings of classic
+                          art. The analogy holds longer than one might expect, since using Bootstrap to build a Wikipedia page seems much like repainting the classic oil painting using modern acrylics. Doable, but different.</p>
                       </div>
                     </div>
                     <div class="row ">
                       <div class="col-sm-12 purpleback section ">
                         <h2 class="purplebox header ">Today's featured picture</h2>
-                        <p>Purple Column Content</p>
-                        <p>Purple Column Content</p>
+                        <div class="container float-left ml-0 mr-0 pt-4 pb-4">
+                          <!-- Button to Open the Modal -->
+                          <button type="button" class="btn btn-link p-0 m-0" data-toggle="modal" data-target="#photoModal">
+    <img alt="Wikipedia Main Page" class="float-left" src="../Trikipedia/wikipediasamplepage.png" width="380px" height="285px"/>
+  </button>
+
+                          <!-- The Modal -->
+                          <div class="modal fade" id="photoModal">
+                            <div class="modal-dialog modal-lg mx-auto">
+                              <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  <img alt="Wikipedia Main Page" class="img-fluid" src="../Trikipedia/wikipediasamplepage.png" />
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-middle" style="inline-block">
+                          <p>The Wikipedia snapshot used in the initial <a href="#" title="Assignment">assignment</a> for this Trikipedia page from <a href="#" title="Epicodus">Epicodus</a> has the honor spot for images.</p>
+                        </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-12 section">
-                        <h2 class="header">Other areas of Trikipedia</h2>
+                        <h2 class="bottomhead">Other areas of Trikipedia</h2>
                         <ul>
                           <li><b><a href="#" title="Trikipedia:Community portal">Community portal</a></b> – Bulletin board, projects, resources and activities which would cover a wide range of Trikipedia areas.</li>
                           <li><b><a href="#" title="Trikipedia:Help desk">Help desk</a></b> – Ask questions about using Trikipedia.</li>
@@ -293,7 +332,7 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-12 section">
-                        <h2 class="header">Trikipedia's sister projects</h2>
+                        <h2 class="bottomhead">Trikipedia's sister projects</h2>
                         <p>Trikipedia is hosted by <a href="#" title="Toby Ziegler dot com">TobyZiegler.com</a>, a not-making-much-profit dude also hosting none of these other <a href="#" title="daProjects">projects</a>:</p>
                         <table style="width:100%; margin:auto; text-align:left; background:transparent;">
                           <tr>
@@ -333,7 +372,7 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-12 section">
-                        <h2 class="header">Wikipedia languages</h2>
+                        <h2 class="bottomhead">Wikipedia languages</h2>
                         <p>Trikipedia is written in <a href="#" title="English language">English</a>. Created in 2018, it currently has hardly any articles. Many other actual Wikipedias are available; some of the largest are listed below.</p>
                         <ul>
                           <li>
@@ -407,6 +446,31 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10" style="font-size: 80%">
+        <ul class="list-unstyled list-inline mt-4">
+          <li class="list-inline-item"> This page was last edited on 6 February 2018, at 11:55.</li>
+          <li class="list-inline-item"></li>&copy Copyright 2018, Toby Ziegler.</li>
+        </ul>
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item"></li><a href="#" title="Privacy">Privacy policy</a></li>
+          <li class="list-inline-item"></li><a href="#" title="About">About Wikipedia</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Disclaimer">Disclaimers</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Contact">Contact Wikipedia</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Developers">Developers</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Cookie_statement">Cookie statement</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Mobile">Mobile view</a></li>
+        </ul>
+        <ul class="list-unstyled list-inline float-right">
+          <li class="list-inline-item">
+            <a href="#"><img src="TrikimediaProject.svg" width="88" height="31" alt="Trikimedia Foundation"/></a></li>
+          <li class="list-inline-item">
+            <a href="#"><img src="PoweredbyMediaTriki.svg" width="88" height="31" alt="Powered by MediaTriki"/></a></li>
+        </ul>
+        <div style="clear: both;"></div>
       </div>
     </div>
   </div>
