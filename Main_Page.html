@@ -18,7 +18,7 @@
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-sm-2 grayback hidden-xs sidebar h-100" style="background:#f9f9f9">
+      <div class="col-sm-2 grayback hidden-sm-down sidebar h-100" style="background:#f9f9f9">
         <div>
           <p></p>
           <a href="#"><img src="TrikiGlobeSmall.svg" alt="Trikipedia Logo" class="mainlogo"/></a>
@@ -154,7 +154,6 @@
 
             <div class="row ">
               <div class="col-sm-12 tabnav">
-                <!--<p>Tabs Here</p>-->
                 <ul class="nav nav-tabs">
                   <li class="nav-item"><a class="nav-link tabpad active" href="#">Main Page</a></li>
                   <li class="nav-item mr-auto"><a class="nav-link tabpad" href="#">Talk</a></li>
@@ -178,45 +177,45 @@
             <div class="row">
               <div class="col-sm-12 ">
                 <div class="row ">
-                  <div class="col-sm-12 grayback section " style="margin-top:0.8em; margin-bottom:0.3em; ">
-                    <div class="row">
-                      <div class="col-sm-7">
-                        <div class="container">
-                          <div style="font-size:162%; padding:.1em;">
+                  <div class="col-sm-12">
+                    <div class="row welcome section">
+                      <div class="col-sm-4">
+                        <div class="container text-center">
+                          <div style="font-size:150%; padding:.1em;">
                             Welcome to <a href="#">Trikipedia</a>,
                           </div>
-                          <div style="font-size:95%">
-                            the fake encyclopedia almost no-one can edit,
+                          <div style="font-size:90%">
+                            the fake encyclopedia no-one edits,
                           </div>
-                          <div style="font-size:85%">
+                          <div style="font-size:80%">
                             with just a few articles in English
                           </div>
                         </div>
                       </div>
+                      <div class="col-sm-3">
+                      </div>
                       <div class="col-sm-5">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col">
-                              <ul>
-                                <li><a href="#">Arts</a></li>
-                                <li><a href="#">Biography</a></li>
-                                <li><a href="#">Geography</a></li>
-                              </ul>
-                            </div>
-                            <div class="col">
-                              <ul>
-                                <li><a href="#">History</a></li>
-                                <li><a href="#">Mathematics</a></li>
-                                <li><a href="#">Science</a></li>
-                              </ul>
-                            </div>
-                            <div class="col">
-                              <ul>
-                                <li><a href="#">Society</a></li>
-                                <li><a href="#">Technology</a></li>
-                                <li><a href="#">All Portals</a></li>
-                              </ul>
-                            </div>
+                        <div class="row portalbullet">
+                          <div class="col p-0">
+                            <ul>
+                              <li><a href="#">Arts</a></li>
+                              <li><a href="#">Biography</a></li>
+                              <li><a href="#">Geography</a></li>
+                            </ul>
+                          </div>
+                          <div class="col p-0">
+                            <ul>
+                              <li><a href="#">History</a></li>
+                              <li><a href="#">Mathematics</a></li>
+                              <li><a href="#">Science</a></li>
+                            </ul>
+                          </div>
+                          <div class="col p-0">
+                            <ul>
+                              <li><a href="#">Society</a></li>
+                              <li><a href="#">Technology</a></li>
+                              <li><a href="#"><strong>All Portals</strong></a></li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -224,23 +223,45 @@
                     <div class="row ">
                       <div class="col-sm-7 greenback section ">
                         <h2 class="greenbox header ">From today's featured article</h2>
-                        <p>Green Column Content</p>
-                        <p>Green Column Content</p>
-                        <p>Green Column Content</p>
+                        <p>The <a href="https://www.missouristate.edu/">Missouri State University</a> chapter of the <strong><a href="https://missouristate.campuslabs.com/engage/organization/mostateafc">Advocating for Families and Children</a></strong> community
+                          group has a series of stated purposes listed on their campus web page. These include:</p>
+                        <ul>
+                          <li>To promote and maintain high standards for the care and education of young children;</li>
+                          <li>To promote the citizens of the region to take action which promotes the welfare of young children and their families;</li>
+                          <li>To encourage continuing study of the needs of young children and their families, interpretation of such findings and acceptance of these by such individuals and groups;</li>
+                          <li>To cooperate with other rganizations and disciplines for the improvement of services to young children and their families in the region, the state, the nation and the world;</li>
+                          <li>To keep abreast of and participate in the development of research and trends in early childhood education, family dynamics and related fields.</li>
+                          <li>To promote opportunities for students to learn about early care and education initiatives, programs and community efforts.</li>
+                        </ul>
                         <h2 class="greenbox header ">Did you know...</h2>
-                        <p>Green Column Content</p>
-                        <p>Green Column Content</p>
-                        <p>Green Column Content</p>
+                        <ul>
+                          <li>... that the goal of this exercise is to rebuild how the site looks not how it behaves, so the links don't need to link anywhere.</li>
+                          <li>... that to make a dummy link, use the <code>#</code> as the value of the <code>href</code> attribute on your link. For example: <code>&lt;a href=”#”&gt;</code>.</li>
+                          <li>... that you should make sure you are committing your changes appropriately and pushing to a remote repository on GitHub.</li>
+                          <li>... that you should not rush through this. Being able to accurately rebuild a site is a great skill to have and will really help in understanding how CSS works to style your pages.</li>
+                        </ul>
                       </div>
                       <div class="col-sm-5 blueback section ">
                         <h2 class="bluebox header ">In the news</h2>
-                        <p>Blue Column Content</p>
-                        <p>Blue Column Content</p>
-                        <p>Blue Column Content</p>
+                        <ul>
+                          <li>This Trikipedia page is part of an assignment for the Spring 2018 session of CIS 475, Advanced Web Development.</li>
+                          <li>The name of the assignment is Wikipedia Rebuild.</li>
+                          <li>The text of the assignment is as follows:</li>
+                          <li>Now let’s use Bootstrap to rebuild the Wikipedia homepage.</li>
+                          <li>Use divs, spans, classes, floats, etc to style the page exactly as it appears in your browser.</li>
+                          <li>Feel free to use placeholder text and images in your project.</li>
+                        </ul>
                         <h2 class="bluebox header ">On this day...</h2>
-                        <p>Blue Column Content</p>
-                        <p>Blue Column Content</p>
-                        <p>Blue Column Content</p>
+                        <p><strong><a href="#" title="February06">February 6</a></strong></p>
+
+                        </ul>
+                        <li><a href="#" title="1508">1508</a> – <strong><a href="#" title="Maximilian I">Maximilian I</a></strong> proclaimed Holy Roman Emperor, 1st Emperor in centuries not to be crowned by the Pope.</li>
+                        <li><a href="#" title="1778">1778</a> – France recognizes the United States of America, signing the <strong><a href="#" title="Treaty of Alliance">Treaty of Alliance</a></strong> in Paris, 1st US treaty</li>
+                        <li><a href="#" title="2017">2017</a> – Washington state and Minnesota lawyers told a federal appellate court that restoring <strong><a href="#" title="Travel Ban">President Drumpf’s travel ban</a></strong> on refugees and travelers
+                          from seven predominantly Muslim countries would “unleash chaos again.”</li>
+                        <li><a href="#" title="2018">2018</a> – The <strong><a href="#" title="Wikipedia Rebuild">Wikipedia Rebuild</a></strong> was due on Tuesday, February 7, 2018 at 11:55 pm, Central time.</li>
+                        </ul>
+                        <p><strong><a href="#" title="Bartholomäus Sastrow">Bartholomäus Sastrow</a></strong> (d.&#160;1603)&#160;<strong>·</strong> <strong><a href="#" title="Desmond Doss">Desmond Doss</a></strong> (b.&#160;1919)&#160;<strong>·</strong>                          <strong><a href="#" title="Steve Nash">Steve Nash</a></strong> (b.&#160;1974)</p>
                       </div>
                     </div>
                     <div class="row ">
@@ -259,7 +280,7 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-12 section">
-                        <h2>Other areas of Trikipedia</h2>
+                        <h2 class="header">Other areas of Trikipedia</h2>
                         <ul>
                           <li><b><a href="#" title="Trikipedia:Community portal">Community portal</a></b> – Bulletin board, projects, resources and activities which would cover a wide range of Trikipedia areas.</li>
                           <li><b><a href="#" title="Trikipedia:Help desk">Help desk</a></b> – Ask questions about using Trikipedia.</li>
@@ -272,7 +293,7 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-12 section">
-                        <h2>Trikipedia's sister projects</h2>
+                        <h2 class="header">Trikipedia's sister projects</h2>
                         <p>Trikipedia is hosted by <a href="#" title="Toby Ziegler dot com">TobyZiegler.com</a>, a not-making-much-profit dude also hosting none of these other <a href="#" title="daProjects">projects</a>:</p>
                         <table style="width:100%; margin:auto; text-align:left; background:transparent;">
                           <tr>
@@ -312,70 +333,70 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-12 section">
-                          <h2>Wikipedia languages</h2>
-                            <p>Trikipedia is written in <a href="#" title="English language">English</a>. Created in 2018, it currently has hardly any articles. Many other actual Wikipedias are available; some of the largest are listed below.</p>
-                            <ul>
-                              <li>
-                                  <ul class="list-unstyled list-inline">
-                                    <li class="list-inline-item">More than 1,000,000 articles:</li>
-                                    <li class="list-inline-item"><a href="#"><span title="German (de:)" lang="de" xml:lang="de">Deutsch</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Spanish (es:)" lang="es" xml:lang="es">Español</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="French (fr:)" lang="fr" xml:lang="fr">Français</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Italian (it:)" lang="it" xml:lang="it">Italiano</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Dutch (nl:)" lang="nl" xml:lang="nl">Nederlands</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Japanese (ja:)" lang="ja" xml:lang="ja">日本語</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Polish (pl:)" lang="pl" xml:lang="pl">Polski</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Russian (ru:)" lang="ru" xml:lang="ru">Русский</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Swedish (sv:)" lang="sv" xml:lang="sv">Svenska</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Vietnamese (vi:)" lang="vi" xml:lang="vi">Tiếng Việt</span></a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <ul class="list-unstyled list-inline">
-                                    <li class="list-inline-item">More than 250,000 articles:</li>
-                                    <li class="list-inline-item"><a href="#"><span title="Arabic (ar:)" lang="ar" xml:lang="ar">العربية</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Indonesian (id:)" lang="id" xml:lang="id">Bahasa Indonesia</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Malay (ms:)" lang="ms" xml:lang="ms">Bahasa Melayu</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Catalan (ca:)" lang="ca" xml:lang="ca">Català</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Czech (cs:)" lang="cs" xml:lang="cs">Čeština</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Basque (eu:)" lang="eu" xml:lang="eu">Euskara</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Persian (fa:)" lang="fa" xml:lang="fa">فارسی</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Korean (ko:)" lang="ko" xml:lang="ko">한국어</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Hungarian (hu:)" lang="hu" xml:lang="hu">Magyar</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Norwegian (no:)" lang="no" xml:lang="no">Norsk</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Portuguese (pt:)" lang="pt" xml:lang="pt">Português</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Romanian (ro:)" lang="ro" xml:lang="ro">Română</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Serbian (sr:)" lang="sr" xml:lang="sr">Srpski</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Serbo-Croatian (sh:)" lang="sh" xml:lang="sh">Srpskohrvatski</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Finnish (fi:)" lang="fi" xml:lang="fi">Suomi</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Turkish (tr:)" lang="tr" xml:lang="tr">Türkçe</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Ukrainian (uk:)" lang="uk" xml:lang="uk">Українська</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Chinese (zh:)" lang="zh" xml:lang="zh">中文</span></a></li>
-                                  </ul>
-                              </li>
-                              <li>
-                                  <ul class="list-unstyled list-inline">
-                                    <li class="list-inline-item">More than 50,000 articles:</li>
-                                    <li class="list-inline-item"><a href="#"><span title="Bosnian (bs:)" lang="bs" xml:lang="bs">Bosanski</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Bulgarian (bg:)" lang="bg" xml:lang="bg">Български</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Danish (da:)" lang="da" xml:lang="da">Dansk</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Estonian (et:)" lang="et" xml:lang="et">Eesti</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Greek (el:)" lang="el" xml:lang="el">Ελληνικά</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Simple English (simple:)" lang="simple" xml:lang="simple">English (simple form)</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Esperanto (eo:)" lang="eo" xml:lang="eo">Esperanto</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Galician (gl:)" lang="gl" xml:lang="gl">Galego</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Hebrew (he:)" lang="he" xml:lang="he">עברית</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Croatian (hr:)" lang="hr" xml:lang="hr">Hrvatski</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Latvian (lv:)" lang="lv" xml:lang="lv">Latviešu</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Lithuanian (lt:)" lang="lt" xml:lang="lt">Lietuvių</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Norwegian Nynorsk (nn:)" lang="nn" xml:lang="nn">Norsk nynorsk</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Slovak (sk:)" lang="sk" xml:lang="sk">Slovenčina</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Slovenian (sl:)" lang="sl" xml:lang="sl">Slovenščina</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><span title="Thai (th:)" lang="th" xml:lang="th">ไทย</span></a></li>
-                                  </ul>
-                              </li>
+                        <h2 class="header">Wikipedia languages</h2>
+                        <p>Trikipedia is written in <a href="#" title="English language">English</a>. Created in 2018, it currently has hardly any articles. Many other actual Wikipedias are available; some of the largest are listed below.</p>
+                        <ul>
+                          <li>
+                            <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item">More than 1,000,000 articles:</li>
+                              <li class="list-inline-item"><a href="#"><span title="German (de:)" lang="de" xml:lang="de">Deutsch</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Spanish (es:)" lang="es" xml:lang="es">Español</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="French (fr:)" lang="fr" xml:lang="fr">Français</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Italian (it:)" lang="it" xml:lang="it">Italiano</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Dutch (nl:)" lang="nl" xml:lang="nl">Nederlands</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Japanese (ja:)" lang="ja" xml:lang="ja">日本語</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Polish (pl:)" lang="pl" xml:lang="pl">Polski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Russian (ru:)" lang="ru" xml:lang="ru">Русский</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Swedish (sv:)" lang="sv" xml:lang="sv">Svenska</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Vietnamese (vi:)" lang="vi" xml:lang="vi">Tiếng Việt</span></a></li>
                             </ul>
-                          <div style="text-align:center"><strong><a href="#" class="extiw" title="List of Wikipedias">Complete list of Wikipedias</a></strong></div>
+                          </li>
+                          <li>
+                            <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item">More than 250,000 articles:</li>
+                              <li class="list-inline-item"><a href="#"><span title="Arabic (ar:)" lang="ar" xml:lang="ar">العربية</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Indonesian (id:)" lang="id" xml:lang="id">Bahasa Indonesia</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Malay (ms:)" lang="ms" xml:lang="ms">Bahasa Melayu</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Catalan (ca:)" lang="ca" xml:lang="ca">Català</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Czech (cs:)" lang="cs" xml:lang="cs">Čeština</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Basque (eu:)" lang="eu" xml:lang="eu">Euskara</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Persian (fa:)" lang="fa" xml:lang="fa">فارسی</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Korean (ko:)" lang="ko" xml:lang="ko">한국어</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Hungarian (hu:)" lang="hu" xml:lang="hu">Magyar</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Norwegian (no:)" lang="no" xml:lang="no">Norsk</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Portuguese (pt:)" lang="pt" xml:lang="pt">Português</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Romanian (ro:)" lang="ro" xml:lang="ro">Română</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Serbian (sr:)" lang="sr" xml:lang="sr">Srpski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Serbo-Croatian (sh:)" lang="sh" xml:lang="sh">Srpskohrvatski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Finnish (fi:)" lang="fi" xml:lang="fi">Suomi</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Turkish (tr:)" lang="tr" xml:lang="tr">Türkçe</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Ukrainian (uk:)" lang="uk" xml:lang="uk">Українська</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Chinese (zh:)" lang="zh" xml:lang="zh">中文</span></a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item">More than 50,000 articles:</li>
+                              <li class="list-inline-item"><a href="#"><span title="Bosnian (bs:)" lang="bs" xml:lang="bs">Bosanski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Bulgarian (bg:)" lang="bg" xml:lang="bg">Български</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Danish (da:)" lang="da" xml:lang="da">Dansk</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Estonian (et:)" lang="et" xml:lang="et">Eesti</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Greek (el:)" lang="el" xml:lang="el">Ελληνικά</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Simple English (simple:)" lang="simple" xml:lang="simple">English (simple form)</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Esperanto (eo:)" lang="eo" xml:lang="eo">Esperanto</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Galician (gl:)" lang="gl" xml:lang="gl">Galego</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Hebrew (he:)" lang="he" xml:lang="he">עברית</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Croatian (hr:)" lang="hr" xml:lang="hr">Hrvatski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Latvian (lv:)" lang="lv" xml:lang="lv">Latviešu</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Lithuanian (lt:)" lang="lt" xml:lang="lt">Lietuvių</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Norwegian Nynorsk (nn:)" lang="nn" xml:lang="nn">Norsk nynorsk</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Slovak (sk:)" lang="sk" xml:lang="sk">Slovenčina</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Slovenian (sl:)" lang="sl" xml:lang="sl">Slovenščina</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Thai (th:)" lang="th" xml:lang="th">ไทย</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <div style="text-align:center"><strong><a href="#" title="List of Wikipedias">Complete list of Wikipedias</a></strong></div>
 
 
                       </div>
