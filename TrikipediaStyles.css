@@ -121,3 +121,6 @@ a:visited {
     margin-top: 0.2em;
     overflow: auto;
 }
+.languagelist {
+    display: inline;
+}
