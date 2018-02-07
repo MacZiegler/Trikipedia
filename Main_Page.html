@@ -8,143 +8,469 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <style>
-    .graygradient {
-      background-color: linear-gradient(90deg, #ffffff 50%, $f6f6f6 100%);
-      background-position: left top;
-      height: 5rem;
-    }
-
-    .grayback {
-      background: f9f9f9;
-      border: 1px solid #ddd;
-    }
-
-    .greenback {
-      background: #f5fffa;
-      border: 1px solid #cef2e0;
-    }
-
-    .greenbox {
-      background: #cef2e0;
-      border: 1px solid #a3bfb1;
-    }
-
-    .blueback {
-      background: #f5faff;
-      border: 1px solid #cedff2;
-    }
-
-    .bluebox {
-      background: #cedff2;
-      border: 1px solid #a3b0bf;
-    }
-
-    .pinkback {
-      background: #fff5fa;
-      border: 1px solid #f2cedd;
-    }
-
-    .pinkbox {
-      background: #f2cedd;
-      border: 1px solid #bfa3af;
-    }
-
-    .purpleback {
-      background: #faf5ff;
-      border: 1px solid #ddcef2;
-    }
-
-    .purplebox {
-      background: #ddcef2;
-      border: 1px solid #afa3bf;
-    }
-
-    .header {
-      margin: 0.5em 0;
-      font-family: inherit;
-      font-size: 120%;
-      font-weight: bold;
-      padding: 0.2em 0.4em;
-    }
-
-    .section {
-      margin-top: 0.2em;
-      overflow: auto;
-    }
-  </style>
+  <link rel="stylesheet" href="TrikipediaStyles.css">
 
   <title>Trikipedia</title>
 </head>
 
 <body>
-  <div class="graygradient"></div>
+
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-2 sidenav hidden-xs" style="background:f9f9f9;  style=" height:100% ">
-          <h3>SideBar</h3>
-          <p>Trikipedia Logo</p>
-          <p>SideBar Link One</p>
-          <p>SideBar Link Two</p>
-          <p>SideBar Link Three</p>
+
+      <div class="col-sm-2 grayback hidden-xs sidebar h-100" style="background:#f9f9f9">
+        <div>
+          <p></p>
+          <a href="#"><img src="TrikiGlobeSmall.svg" alt="Trikipedia Logo" class="mainlogo"/></a>
+          <p></p>
+        </div>
+
+        <div>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">Main page</a></li>
+            <li><a href="#" class="nav-link">Contents</a></li>
+            <li><a href="#" class="nav-link">Featured content</a></li>
+            <li><a href="#" class="nav-link">Current events</a></li>
+            <li><a href="#" class="nav-link">Random article</a></li>
+            <li><a href="#" class="nav-link">Donate to Wikipedia</a></li>
+            <li><a href="#" class="nav-link">Wikipedia store</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="subtitle">Interaction</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">Help</a></li>
+            <li><a href="#" class="nav-link">About Wikipedia</a></li>
+            <li><a href="#" class="nav-link">Community portal</a></li>
+            <li><a href="#" class="nav-link">Recent changes</a></li>
+            <li><a href="#" class="nav-link">Contact page</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="subtitle">Tools</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">What links here</a></li>
+            <li><a href="#" class="nav-link">Related changes</a></li>
+            <li><a href="#" class="nav-link">Upload file</a></li>
+            <li><a href="#" class="nav-link">Special pages</a></li>
+            <li><a href="#" class="nav-link">Permanent link</a></li>
+            <li><a href="#" class="nav-link">Page information</a></li>
+            <li><a href="#" class="nav-link">Wikidata item</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="subtitle">Print/export</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">Create a book</a></li>
+            <li><a href="#" class="nav-link">Download as PDF</a></li>
+            <li><a href="#" class="nav-link">Printable version</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="subtitle">In other projects</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">Wikimedia Commons</a></li>
+            <li><a href="#" class="nav-link">MediaWiki</a></li>
+            <li><a href="#" class="nav-link">Meta-Wiki</a></li>
+            <li><a href="#" class="nav-link">Wikispecies</a></li>
+            <li><a href="#" class="nav-link">Wikibooks</a></li>
+            <li><a href="#" class="nav-link">Wikidata</a></li>
+            <li><a href="#" class="nav-link">Wikinews</a></li>
+            <li><a href="#" class="nav-link">Wikiquote</a></li>
+            <li><a href="#" class="nav-link">Wikisource</a></li>
+            <li><a href="#" class="nav-link">Wikiversity</a></li>
+            <li><a href="#" class="nav-link">Wikivoyage</a></li>
+            <li><a href="#" class="nav-link">Wiktionary</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="subtitle">Languages</span>
+          <ul class="nav">
+            <li><a href="#" class="nav-link">العربية</a></li>
+            <li><a href="#" class="nav-link">Български</a></li>
+            <li><a href="#" class="nav-link">Bosanski</a></li>
+            <li><a href="#" class="nav-link">Català</a></li>
+            <li><a href="#" class="nav-link">Čeština</a></li>
+            <li><a href="#" class="nav-link">Dansk</a></li>
+            <li><a href="#" class="nav-link">Deutsch</a></li>
+            <li><a href="#" class="nav-link">Eesti</a></li>
+            <li><a href="#" class="nav-link">Ελληνικά</a></li>
+            <li><a href="#" class="nav-link">Español</a></li>
+            <li><a href="#" class="nav-link">Esperanto</a></li>
+            <li><a href="#" class="nav-link">Euskara</a></li>
+            <li><a href="#" class="nav-link">فارسی</a></li>
+            <li><a href="#" class="nav-link">Français</a></li>
+            <li><a href="#" class="nav-link">Galego</a></li>
+            <li><a href="#" class="nav-link">한국어</a></li>
+            <li><a href="#" class="nav-link">Hrvatski</a></li>
+            <li><a href="#" class="nav-link">Bahasa Indonesia</a></li>
+            <li><a href="#" class="nav-link">Italiano</a></li>
+            <li><a href="#" class="nav-link">עברית</a></li>
+            <li><a href="#" class="nav-link">ქართული</a></li>
+            <li><a href="#" class="nav-link">Latviešu</a></li>
+            <li><a href="#" class="nav-link">Lietuvių</a></li>
+            <li><a href="#" class="nav-link">Magyar</a></li>
+            <li><a href="#" class="nav-link">Bahasa Melayu</a></li>
+            <li><a href="#" class="nav-link">Nederlands</a></li>
+            <li><a href="#" class="nav-link">日本語</a></li>
+            <li><a href="#" class="nav-link">Norsk</a></li>
+            <li><a href="#" class="nav-link">Norsk nynorsk</a></li>
+            <li><a href="#" class="nav-link">Polski</a></li>
+            <li><a href="#" class="nav-link">Português</a></li>
+            <li><a href="#" class="nav-link">Română</a></li>
+            <li><a href="#" class="nav-link">Русский</a></li>
+            <li><a href="#" class="nav-link">Simple English</a></li>
+            <li><a href="#" class="nav-link">Slovenčina</a></li>
+            <li><a href="#" class="nav-link">Slovenščina</a></li>
+            <li><a href="#" class="nav-link">Српски / srpski</a></li>
+            <li><a href="#" class="nav-link">Srpskohrvatski / српскохрватски</a></li>
+            <li><a href="#" class="nav-link">Suomi</a></li>
+            <li><a href="#" class="nav-link">Svenska</a></li>
+            <li><a href="#" class="nav-link">ไทย</a></li>
+            <li><a href="#" class="nav-link">Türkçe</a></li>
+            <li><a href="#" class="nav-link">Українська</a></li>
+            <li><a href="#" class="nav-link">Tiếng Việt</a></li>
+            <li><a href="#" class="nav-link">中文</a></li>
+            <li><a href="#" class="nav-link">Complete list</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="col-sm-10 ">
+      <div class="col-sm-10 pr-0">
         <div class="row ">
-          <div class="col-sm-12 ">
-            <p style="align:right; ">Navigation Here</p>
-          </div>
-        </div>
-        <div class="row ">
-          <div class="col-sm-12 ">
-            <p>Tabs Here</p>
-          </div>
-        </div>
-        <div class="container-fluid " style="border:1px solid #ddcef2; padding:1.4em; ">
-          <div class="col-sm-12 ">
-            <div class="row ">
-              <div class="col-sm-12 grayback section " style="margin-top:0.8em; margin-bottom:0.3em; ">
-                <p>Welcome to Trikipedia</p>
+
+          <div class="col-sm-12 graygradient pr-0">
+            <div class="row">
+              <div class="col-sm-12 topnav pr-0">
+                <ul class="nav justify-content-end" style="margin:0; padding:0">
+                  <span class="navbar-text"><span class="glyphicon glyphicon-user"></span> Not logged in</span>
+                  <li class="nav-item"><a href="#" class="nav-link">Talk</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Contributions</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Create Account</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
+                </ul>
               </div>
             </div>
+
             <div class="row ">
-              <div class="col-sm-7 greenback section ">
-                <h2 class="greenbox header ">From today's featured article</h2>
-                <p>Green Column Content</p>
-                <p>Green Column Content</p>
-                <p>Green Column Content</p>
-                <h2 class="greenbox header ">Did you know...</h2>
-                <p>Green Column Content</p>
-                <p>Green Column Content</p>
-                <p>Green Column Content</p>
-              </div>
-              <div class="col-sm-5 blueback section ">
-                <h2 class="bluebox header ">In the news</h2>
-                <p>Blue Column Content</p>
-                <p>Blue Column Content</p>
-                <p>Blue Column Content</p>
-                <h2 class="bluebox header ">On this day...</h2>
-                <p>Blue Column Content</p>
-                <p>Blue Column Content</p>
-                <p>Blue Column Content</p>
+              <div class="col-sm-12 tabnav">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item"><a class="nav-link tabpad active" href="#">Main Page</a></li>
+                  <li class="nav-item mr-auto"><a class="nav-link tabpad" href="#">Talk</a></li>
+                  <li class="nav-item"><a class="nav-link tabpad" href="#">Read</a></li>
+                  <li class="nav-item"><a class="nav-link tabpad" href="#">View Source</a></li>
+                  <li class="nav-item"><a class="nav-link tabpad" href="#">View History</a></li>
+                  <li class="nav-item">
+                    <form>
+                      <div class="form-inline">
+                        <input type="text" class="form-control tabpad" id="srch" placeholder="Search Trikipedia">
+                      </div>
+                    </form>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="row ">
-              <div class="col-sm-12 pinkback section ">
-                  <h2 class="pinkbox header ">From today's featured list</h2>
-        <p>Pink Column Content</p>
-        <p>Pink Column Content</p>
+
+          </div>
+
+          <div class="container-fluid " style="border:1px solid #ddcef2; padding:1.4em; ">
+            <div class="row">
+              <div class="col-sm-12 ">
+                <div class="row ">
+                  <div class="col-sm-12">
+                    <div class="row welcome section">
+                      <div class="col-sm-4">
+                        <div class="container float-left text-center" style="width: 20em">
+                          <div style="font-size:150%; padding:.1em;">
+                            Welcome to <a href="#">Trikipedia</a>,
+                          </div>
+                          <div style="font-size:90%">
+                            the fake encyclopedia no-one edits,
+                          </div>
+                          <div style="font-size:80%">
+                            with just a few articles in English
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                      </div>
+                      <div class="col-sm-5">
+                        <div class="row portalbullet">
+                          <div class="col p-0">
+                            <ul>
+                              <li><a href="#">Arts</a></li>
+                              <li><a href="#">Biography</a></li>
+                              <li><a href="#">Geography</a></li>
+                            </ul>
+                          </div>
+                          <div class="col p-0">
+                            <ul>
+                              <li><a href="#">History</a></li>
+                              <li><a href="#">Mathematics</a></li>
+                              <li><a href="#">Science</a></li>
+                            </ul>
+                          </div>
+                          <div class="col p-0">
+                            <ul>
+                              <li><a href="#">Society</a></li>
+                              <li><a href="#">Technology</a></li>
+                              <li><a href="#"><strong>All Portals</strong></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-sm-7 greenback section ">
+                        <h2 class="greenbox header ">From today's featured article</h2>
+                        <p>The <a href="https://www.missouristate.edu/">Missouri State University</a> chapter of the <strong><a href="https://missouristate.campuslabs.com/engage/organization/mostateafc">Advocating for Families and Children</a></strong> community
+                          group has a series of stated purposes listed on their campus web page. These include:</p>
+                        <ul>
+                          <li>To promote and maintain high standards for the care and education of young children;</li>
+                          <li>To promote the citizens of the region to take action which promotes the welfare of young children and their families;</li>
+                          <li>To encourage continuing study of the needs of young children and their families, interpretation of such findings and acceptance of these by such individuals and groups;</li>
+                          <li>To cooperate with other rganizations and disciplines for the improvement of services to young children and their families in the region, the state, the nation and the world;</li>
+                          <li>To keep abreast of and participate in the development of research and trends in early childhood education, family dynamics and related fields.</li>
+                          <li>To promote opportunities for students to learn about early care and education initiatives, programs and community efforts.</li>
+                        </ul>
+                        <h2 class="greenbox header ">Did you know...</h2>
+                        <ul>
+                          <li>... that the goal of this exercise is to rebuild how the site looks not how it behaves, so the links don't need to link anywhere.</li>
+                          <li>... that to make a dummy link, use the <code>#</code> as the value of the <code>href</code> attribute on your link. For example: <code>&lt;a href=”#”&gt;</code>.</li>
+                          <li>... that you should make sure you are committing your changes appropriately and pushing to a remote repository on GitHub.</li>
+                          <li>... that you should not rush through this. Being able to accurately rebuild a site is a great skill to have and will really help in understanding how CSS works to style your pages.</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-5 blueback section ">
+                        <h2 class="bluebox header ">In the news</h2>
+                        <ul>
+                          <li>This Trikipedia page is part of an assignment for the Spring 2018 session of CIS 475, Advanced Web Development.</li>
+                          <li>The name of the assignment is Wikipedia Rebuild.</li>
+                          <li>The text of the assignment is as follows:</li>
+                          <li>Now let’s use Bootstrap to rebuild the Wikipedia homepage.</li>
+                          <li>Use divs, spans, classes, floats, etc to style the page exactly as it appears in your browser.</li>
+                          <li>Feel free to use placeholder text and images in your project.</li>
+                        </ul>
+                        <h2 class="bluebox header ">On this day...</h2>
+                        <p><strong><a href="#" title="February06">February 6</a></strong></p>
+
+                        </ul>
+                        <li><a href="#" title="1508">1508</a> – <strong><a href="#" title="Maximilian I">Maximilian I</a></strong> proclaimed Holy Roman Emperor, 1st Emperor in centuries not to be crowned by the Pope.</li>
+                        <li><a href="#" title="1778">1778</a> – France recognizes the United States of America, signing the <strong><a href="#" title="Treaty of Alliance">Treaty of Alliance</a></strong> in Paris, 1st US treaty</li>
+                        <li><a href="#" title="2017">2017</a> – Washington state and Minnesota lawyers told a federal appellate court that restoring <strong><a href="#" title="Travel Ban">President Drumpf’s travel ban</a></strong> on refugees and travelers
+                          from seven predominantly Muslim countries would “unleash chaos again.”</li>
+                        <li><a href="#" title="2018">2018</a> – The <strong><a href="#" title="Wikipedia Rebuild">Wikipedia Rebuild</a></strong> was due on Tuesday, February 7, 2018 at 11:55 pm, Central time.</li>
+                        </ul>
+                        <p>
+                          <strong><a href="#" title="Bartholomäus Sastrow">Bartholomäus Sastrow</a></strong> (d.&#160;1603)&#160;<strong>·</strong>
+                          <strong><a href="#" title="Desmond Doss">Desmond Doss</a></strong> (b.&#160;1919)&#160;<strong>·</strong>
+                          <strong><a href="#" title="Steve Nash">Steve Nash</a></strong> (b.&#160;1974)
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-sm-12 pinkback section ">
+                        <h2 class="pinkbox header ">From today's featured list</h2>
+                        <p>This has been an interesting exercise. The Wikipedia main page is not built on Bootstrap, so getting close enough to the main page exact layout is a challenge. In building the page Bootstrap style, I chose not to use the exact
+                          techniques employed by Wikipedia. One of my goals for this page was responsiveness; I wanted the page to transition smoothly from small mobile screen to giant monitor. Unsurprisingly, this turns out to be far easier said than
+                          done.
+                        </p>
+                        <p>I wanted to use the page for more than just a class assignment, so I renamed the project Trikipedia, then created new article material and new graphics. It rather feels like an exercise in replicating the master paintings of classic
+                          art. The analogy holds longer than one might expect, since using Bootstrap to build a Wikipedia page seems much like repainting the classic oil painting using modern acrylics. Doable, but different.</p>
+                      </div>
+                    </div>
+                    <div class="row ">
+                      <div class="col-sm-12 purpleback section ">
+                        <h2 class="purplebox header ">Today's featured picture</h2>
+                        <div class="container float-left ml-0 mr-0 pt-4 pb-4">
+                          <!-- Button to Open the Modal -->
+                          <button type="button" class="btn btn-link p-0 m-0" data-toggle="modal" data-target="#photoModal">
+    <img alt="Wikipedia Main Page" class="float-left" src="../Trikipedia/wikipediasamplepage.png" width="380px" height="285px"/>
+  </button>
+
+                          <!-- The Modal -->
+                          <div class="modal fade" id="photoModal">
+                            <div class="modal-dialog modal-lg mx-auto">
+                              <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  <img alt="Wikipedia Main Page" class="img-fluid" src="../Trikipedia/wikipediasamplepage.png" />
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="align-middle" style="inline-block">
+                          <p>The Wikipedia snapshot used in the initial <a href="#" title="Assignment">assignment</a> for this Trikipedia page from <a href="#" title="Epicodus">Epicodus</a> has the honor spot for images.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 section">
+                        <h2 class="bottomhead">Other areas of Trikipedia</h2>
+                        <ul>
+                          <li><b><a href="#" title="Trikipedia:Community portal">Community portal</a></b> – Bulletin board, projects, resources and activities which would cover a wide range of Trikipedia areas.</li>
+                          <li><b><a href="#" title="Trikipedia:Help desk">Help desk</a></b> – Ask questions about using Trikipedia.</li>
+                          <li><b><a href="#" title="Trikipedia:Local Embassy">Local embassy</a></b> – For Trikipedia-related communication in languages other than English.</li>
+                          <li><b><a href="#" title="Trikipedia:Reference desk">Reference desk</a></b> – Serving as a virtual librarian, the Trikipedia volunteer tackles your questions on a wide range of subjects.</li>
+                          <li><b><a href="#" title="Trikipedia:News">Site news</a></b> – Announcements, updates, articles and press releases on Trikipedia.</li>
+                          <li><b><a href="#" title="Trikipedia:Village pump">Village pump</a></b> – For discussions about Trikipedia itself, including areas for technical issues and policies.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 section">
+                        <h2 class="bottomhead">Trikipedia's sister projects</h2>
+                        <p>Trikipedia is hosted by <a href="#" title="Toby Ziegler dot com">TobyZiegler.com</a>, a not-making-much-profit dude also hosting none of these other <a href="#" title="daProjects">projects</a>:</p>
+                        <table style="width:100%; margin:auto; text-align:left; background:transparent;">
+                          <tr>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="#" title="Commons"><img alt="Commons" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/31px-Commons-logo.svg.png" width="31" height="42" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/47px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/62px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></a></td>
+                            <td style="width:33%; padding:4px;"><b><a class="external text" href="#">Commons</a></b><br /> Free media repository</td>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="#" title="MediaWiki"><img alt="MediaWiki" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mediawiki-logo.png/35px-Mediawiki-logo.png" width="35" height="26" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mediawiki-logo.png/53px-Mediawiki-logo.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mediawiki-logo.png/70px-Mediawiki-logo.png 2x" data-file-width="135" data-file-height="102" /></a></td>
+                            <td style="width:33%; padding:4px;"><b><a class="external text" href="#">MediaWiki</a></b><br /> Wiki software development</td>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="#" title="Meta-Wiki"><img alt="Meta-Wiki" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/35px-Wikimedia_Community_Logo.svg.png" width="35" height="35" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/53px-Wikimedia_Community_Logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/70px-Wikimedia_Community_Logo.svg.png 2x" data-file-width="900" data-file-height="900" /></a></td>
+                            <td style="width:33%; padding:4px;"><b><a class="external text" href="#">Meta-Wiki</a></b><br /> Wikimedia project coordination</td>
+                          </tr>
+                          <tr>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="#" title="Wikibooks"><img alt="Wikibooks" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/35px-Wikibooks-logo.svg.png" width="35" height="35" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/53px-Wikibooks-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/70px-Wikibooks-logo.svg.png 2x" data-file-width="300" data-file-height="300" /></a></td>
+                            <td style="padding:4px;"><b><a class="external text" href="//en.wikibooks.org/">Wikibooks</a></b><br /> Free textbooks and manuals</td>
+                            <td style="min-width: 50px; text-align:center; padding:3px;"><a href="https://www.wikidata.org/wiki/" title="Wikidata"><img alt="Wikidata" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/47px-Wikidata-logo.svg.png" width="47" height="26" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/71px-Wikidata-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/94px-Wikidata-logo.svg.png 2x" data-file-width="1050" data-file-height="590" /></a></td>
+                            <td style="padding:4px;"><b><a class="external text" href="//www.wikidata.org/">Wikidata</a></b><br /> Free knowledge base</td>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="https://en.wikinews.org/wiki/" title="Wikinews"><img alt="Wikinews" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/51px-Wikinews-logo.svg.png" width="51" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/77px-Wikinews-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/102px-Wikinews-logo.svg.png 2x" data-file-width="759" data-file-height="415" /></a></td>
+                            <td style="padding:4px;"><b><a class="external text" href="//en.wikinews.org/">Wikinews</a></b><br /> Free-content news</td>
+                          </tr>
+                          <tr>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="https://en.wikiquote.org/wiki/" title="Wikiquote"><img alt="Wikiquote" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/35px-Wikiquote-logo.svg.png" width="35" height="41" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/53px-Wikiquote-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/70px-Wikiquote-logo.svg.png 2x" data-file-width="300" data-file-height="355" /></a></td>
+                            <td style="padding:4px;"><b><a class="external text" href="//en.wikiquote.org/">Wikiquote</a></b><br /> Collection of quotations</td>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="https://en.wikisource.org/wiki/" title="Wikisource"><img alt="Wikisource" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/35px-Wikisource-logo.svg.png" width="35" height="37" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/53px-Wikisource-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/70px-Wikisource-logo.svg.png 2x" data-file-width="410" data-file-height="430" /></a></td>
+                            <td style="padding:4px;"><b><a class="external text" href="//en.wikisource.org/">Wikisource</a></b><br /> Free-content library</td>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="https://species.wikimedia.org/wiki/" title="Wikispecies"><img alt="Wikispecies" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/35px-Wikispecies-logo.svg.png" width="35" height="41" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/53px-Wikispecies-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/70px-Wikispecies-logo.svg.png 2x" data-file-width="941" data-file-height="1103" /></a></td>
+                            <td style="padding:4px;"><b><a class="external text" href="//species.wikimedia.org/">Wikispecies</a></b><br /> Directory of species</td>
+                          </tr>
+                          <tr>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="https://en.wikiversity.org/wiki/" title="Wikiversity"><img alt="Wikiversity" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/41px-Wikiversity_logo_2017.svg.png" width="41" height="34" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/62px-Wikiversity_logo_2017.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/82px-Wikiversity_logo_2017.svg.png 2x" data-file-width="626" data-file-height="512" /></a></td>
+                            <td style="padding:4px;"><b><a class="external text" href="//en.wikiversity.org/">Wikiversity</a></b><br /> Free learning materials and activities</td>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="https://en.wikivoyage.org/wiki/" title="Wikivoyage"><img alt="Wikivoyage" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/35px-Wikivoyage-Logo-v3-icon.svg.png" width="35" height="35" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/53px-Wikivoyage-Logo-v3-icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/70px-Wikivoyage-Logo-v3-icon.svg.png 2x" data-file-width="193" data-file-height="193" /></a></td>
+                            <td style="padding:4px;"><b><a class="external text" href="//en.wikivoyage.org/">Wikivoyage</a></b><br /> Free travel guide</td>
+                            <td style="min-width: 50px; text-align:center; padding:4px;"><a href="https://en.wiktionary.org/wiki/" title="Wiktionary"><img alt="Wiktionary" src="//upload.wikimedia.org/wikipedia/en/thumb/0/06/Wiktionary-logo-v2.svg/35px-Wiktionary-logo-v2.svg.png" width="35" height="35" srcset="//upload.wikimedia.org/wikipedia/en/thumb/0/06/Wiktionary-logo-v2.svg/53px-Wiktionary-logo-v2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/0/06/Wiktionary-logo-v2.svg/70px-Wiktionary-logo-v2.svg.png 2x" data-file-width="391" data-file-height="391" /></a></td>
+                            <td style="padding:4px;"><b><a class="external text" href="//en.wiktionary.org/">Wiktionary</a></b><br /> Dictionary and thesaurus</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 section">
+                        <h2 class="bottomhead">Wikipedia languages</h2>
+                        <p>Trikipedia is written in <a href="#" title="English language">English</a>. Created in 2018, it currently has hardly any articles. Many other actual Wikipedias are available; some of the largest are listed below.</p>
+                        <ul>
+                          <li>
+                            <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item">More than 1,000,000 articles:</li>
+                              <li class="list-inline-item"><a href="#"><span title="German (de:)" lang="de" xml:lang="de">Deutsch</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Spanish (es:)" lang="es" xml:lang="es">Español</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="French (fr:)" lang="fr" xml:lang="fr">Français</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Italian (it:)" lang="it" xml:lang="it">Italiano</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Dutch (nl:)" lang="nl" xml:lang="nl">Nederlands</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Japanese (ja:)" lang="ja" xml:lang="ja">日本語</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Polish (pl:)" lang="pl" xml:lang="pl">Polski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Russian (ru:)" lang="ru" xml:lang="ru">Русский</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Swedish (sv:)" lang="sv" xml:lang="sv">Svenska</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Vietnamese (vi:)" lang="vi" xml:lang="vi">Tiếng Việt</span></a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item">More than 250,000 articles:</li>
+                              <li class="list-inline-item"><a href="#"><span title="Arabic (ar:)" lang="ar" xml:lang="ar">العربية</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Indonesian (id:)" lang="id" xml:lang="id">Bahasa Indonesia</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Malay (ms:)" lang="ms" xml:lang="ms">Bahasa Melayu</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Catalan (ca:)" lang="ca" xml:lang="ca">Català</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Czech (cs:)" lang="cs" xml:lang="cs">Čeština</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Basque (eu:)" lang="eu" xml:lang="eu">Euskara</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Persian (fa:)" lang="fa" xml:lang="fa">فارسی</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Korean (ko:)" lang="ko" xml:lang="ko">한국어</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Hungarian (hu:)" lang="hu" xml:lang="hu">Magyar</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Norwegian (no:)" lang="no" xml:lang="no">Norsk</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Portuguese (pt:)" lang="pt" xml:lang="pt">Português</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Romanian (ro:)" lang="ro" xml:lang="ro">Română</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Serbian (sr:)" lang="sr" xml:lang="sr">Srpski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Serbo-Croatian (sh:)" lang="sh" xml:lang="sh">Srpskohrvatski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Finnish (fi:)" lang="fi" xml:lang="fi">Suomi</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Turkish (tr:)" lang="tr" xml:lang="tr">Türkçe</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Ukrainian (uk:)" lang="uk" xml:lang="uk">Українська</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Chinese (zh:)" lang="zh" xml:lang="zh">中文</span></a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item">More than 50,000 articles:</li>
+                              <li class="list-inline-item"><a href="#"><span title="Bosnian (bs:)" lang="bs" xml:lang="bs">Bosanski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Bulgarian (bg:)" lang="bg" xml:lang="bg">Български</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Danish (da:)" lang="da" xml:lang="da">Dansk</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Estonian (et:)" lang="et" xml:lang="et">Eesti</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Greek (el:)" lang="el" xml:lang="el">Ελληνικά</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Simple English (simple:)" lang="simple" xml:lang="simple">English (simple form)</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Esperanto (eo:)" lang="eo" xml:lang="eo">Esperanto</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Galician (gl:)" lang="gl" xml:lang="gl">Galego</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Hebrew (he:)" lang="he" xml:lang="he">עברית</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Croatian (hr:)" lang="hr" xml:lang="hr">Hrvatski</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Latvian (lv:)" lang="lv" xml:lang="lv">Latviešu</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Lithuanian (lt:)" lang="lt" xml:lang="lt">Lietuvių</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Norwegian Nynorsk (nn:)" lang="nn" xml:lang="nn">Norsk nynorsk</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Slovak (sk:)" lang="sk" xml:lang="sk">Slovenčina</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Slovenian (sl:)" lang="sl" xml:lang="sl">Slovenščina</span></a></li>
+                              <li class="list-inline-item"><a href="#"><span title="Thai (th:)" lang="th" xml:lang="th">ไทย</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <div style="text-align:center"><strong><a href="#" title="List of Wikipedias">Complete list of Wikipedias</a></strong></div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row ">
-      <div class="col-sm-12 purpleback section ">
-        <h2 class="purplebox header ">Today's featured picture</h2>
-                  <p>Purple Column Content</p>
-                  <p>Purple Column Content</p>
-                </div>
-            </div>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10" style="font-size: 80%">
+        <ul class="list-unstyled list-inline mt-4">
+          <li class="list-inline-item"> This page was last edited on 6 February 2018, at 11:55.</li>
+          <li class="list-inline-item"></li>&copy Copyright 2018, Toby Ziegler.</li>
+        </ul>
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item"></li><a href="#" title="Privacy">Privacy policy</a></li>
+          <li class="list-inline-item"></li><a href="#" title="About">About Wikipedia</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Disclaimer">Disclaimers</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Contact">Contact Wikipedia</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Developers">Developers</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Cookie_statement">Cookie statement</a></li>
+          <li class="list-inline-item"></li><a href="#" title="Mobile">Mobile view</a></li>
+        </ul>
+        <ul class="list-unstyled list-inline float-right">
+          <li class="list-inline-item">
+            <a href="#"><img src="TrikimediaProject.svg" width="88" height="31" alt="Trikimedia Foundation"/></a></li>
+          <li class="list-inline-item">
+            <a href="#"><img src="PoweredbyMediaTriki.svg" width="88" height="31" alt="Powered by MediaTriki"/></a></li>
+        </ul>
+        <div style="clear: both;"></div>
       </div>
     </div>
   </div>
