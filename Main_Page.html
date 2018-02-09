@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
 
+<!-- Toby Ziegler -->
+<!-- CIS-475 Advanced Web Development -->
+<!-- Wikipedia Rebuild Project, code-named Trikipedia -->
+<!-- Assignment Due February 6th, 2018 -->
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -10,15 +15,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="TrikipediaStyles.css">
 
+  <!--Font Awesome, just solid style-->
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/solid.js"></script>
+
   <title>Trikipedia</title>
 </head>
 
-<body>
-
+<body class="grayback">
+  <div class="graygradient"></div>
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-sm-2 grayback hidden-xs sidebar h-100" style="background:#f9f9f9">
+      <div class="col-sm-2 d-none d-sm-block sidebar h-100">
         <div>
           <p></p>
           <a href="#"><img src="TrikiGlobeSmall.svg" alt="Trikipedia Logo" class="mainlogo"/></a>
@@ -137,43 +145,49 @@
       </div>
 
       <div class="col-sm-10 pr-0">
-        <div class="row ">
+        <div class="row">
 
-          <div class="col-sm-12 graygradient pr-0">
+          <div class="col-sm-12 pr-0">
             <div class="row">
-              <div class="col-sm-12 topnav pr-0">
-                <ul class="nav justify-content-end" style="margin:0; padding:0">
-                  <span class="navbar-text"><span class="glyphicon glyphicon-user"></span> Not logged in</span>
-                  <li class="nav-item"><a href="#" class="nav-link">Talk</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Contributions</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Create Account</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
-                </ul>
+              <div class="col-sm-12 topnav pr-0 pb-1">
+                <nav class="nav justify-content-end">
+                  <a class="nav-link pr-2" href="#"><span class="fas fa-user"></span> Not logged in</a>
+                  <a class="nav-link pl-0 pr-2" href="#">Talk</a>
+                  <a class="nav-link pl-0 pr-2" href="#">Contributions</a>
+                  <a class="nav-link pl-0 pr-2" href="#">Create Account</a>
+                  <a class="nav-link pl-0" href="#">Log in</a>
+                </nav>
               </div>
+              <!--end topnav column-->
             </div>
+            <!--end topnav row-->
 
             <div class="row ">
-              <div class="col-sm-12 tabnav">
+              <div class="col-sm-12 d-none d-sm-block tabnav">
                 <ul class="nav nav-tabs">
-                  <li class="nav-item"><a class="nav-link tabpad active" href="#">Main Page</a></li>
-                  <li class="nav-item mr-auto"><a class="nav-link tabpad" href="#">Talk</a></li>
-                  <li class="nav-item"><a class="nav-link tabpad" href="#">Read</a></li>
-                  <li class="nav-item"><a class="nav-link tabpad" href="#">View Source</a></li>
-                  <li class="nav-item"><a class="nav-link tabpad" href="#">View History</a></li>
+                  <li class="nav-item"><a class="nav-link tabstyle active" href="#">Main Page</a></li>
+                  <li class="nav-item mr-auto"><a class="nav-link tabstyle bluegradient" href="#">Talk</a></li>
+                  <li class="nav-item"><a class="nav-link tabstyle active" href="#">Read</a></li>
+                  <li class="nav-item"><a class="nav-link tabstyle bluegradient" href="#">View Source</a></li>
+                  <li class="nav-item"><a class="nav-link tabstyle bluegradient" href="#">View History</a></li>
                   <li class="nav-item">
                     <form>
-                      <div class="form-inline">
-                        <input type="text" class="form-control tabpad" id="srch" placeholder="Search Trikipedia">
+                      <div class="form-inline pt-2 ">
+                        <input type="text" class="form-control tabsearch" id="srch" placeholder="Search Trikipedia">
                       </div>
                     </form>
                   </li>
+                  <!--end search item-->
                 </ul>
+                <!--end nav tabs-->
               </div>
+              <!--end tabnav column-->
             </div>
+            <!--end tabnav row-->
 
           </div>
 
-          <div class="container-fluid " style="border:1px solid #ddcef2; padding:1.4em; ">
+          <div class="container-fluid border-right-0 bg-white" style="border:1px solid #a7d7f9; padding:1.4em; ">
             <div class="row">
               <div class="col-sm-12 ">
                 <div class="row ">
@@ -188,7 +202,7 @@
                             the fake encyclopedia no-one edits,
                           </div>
                           <div style="font-size:80%">
-                            with just a few articles in English
+                            with just a single page in English
                           </div>
                         </div>
                       </div>
@@ -220,7 +234,10 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="row ">
+
+                      <!--green section-->
                       <div class="col-sm-7 greenback section ">
                         <h2 class="greenbox header ">From today's featured article</h2>
                         <p>The <a href="https://www.missouristate.edu/">Missouri State University</a> chapter of the <strong><a href="https://missouristate.campuslabs.com/engage/organization/mostateafc">Advocating for Families and Children</a></strong> community
@@ -233,42 +250,52 @@
                           <li>To keep abreast of and participate in the development of research and trends in early childhood education, family dynamics and related fields.</li>
                           <li>To promote opportunities for students to learn about early care and education initiatives, programs and community efforts.</li>
                         </ul>
-                        <h2 class="greenbox header ">Did you know...</h2>
-                        <ul>
-                          <li>... that the goal of this exercise is to rebuild how the site looks not how it behaves, so the links don't need to link anywhere.</li>
-                          <li>... that to make a dummy link, use the <code>#</code> as the value of the <code>href</code> attribute on your link. For example: <code>&lt;a href=”#”&gt;</code>.</li>
-                          <li>... that you should make sure you are committing your changes appropriately and pushing to a remote repository on GitHub.</li>
-                          <li>... that you should not rush through this. Being able to accurately rebuild a site is a great skill to have and will really help in understanding how CSS works to style your pages.</li>
-                        </ul>
+                        <div class="d-none d-sm-block">
+                          <h2 class="greenbox header ">Did you know...</h2>
+                          <ul>
+                            <li>... that the goal of this exercise is to rebuild how the site looks not how it behaves, so the links don't need to link anywhere.</li>
+                            <li>... that to make a dummy link, use the <code>#</code> as the value of the <code>href</code> attribute on your link. For example: <code>&lt;a href=”#”&gt;</code>.</li>
+                            <li>... that you should make sure you are committing your changes appropriately and pushing to a remote repository on GitHub.</li>
+                            <li>... that you should not rush through this. Being able to accurately rebuild a site is a great skill to have and will really help in understanding how CSS works to style your pages.</li>
+                          </ul>
+                        </div>
                       </div>
+
+                      <!--blue section-->
                       <div class="col-sm-5 blueback section ">
                         <h2 class="bluebox header ">In the news</h2>
                         <ul>
                           <li>This Trikipedia page is part of an assignment for the Spring 2018 session of CIS 475, Advanced Web Development.</li>
                           <li>The name of the assignment is Wikipedia Rebuild.</li>
                           <li>The text of the assignment is as follows:</li>
-                          <li>Now let’s use Bootstrap to rebuild the Wikipedia homepage.</li>
-                          <li>Use divs, spans, classes, floats, etc to style the page exactly as it appears in your browser.</li>
-                          <li>Feel free to use placeholder text and images in your project.</li>
+                          <ol>
+                            <li>Now let’s use Bootstrap to rebuild the Wikipedia homepage.</li>
+                            <li>Use divs, spans, classes, floats, etc to style the page exactly as it appears in your browser.</li>
+                            <li>Feel free to use placeholder text and images in your project.</li>
+                          </ol>
                         </ul>
-                        <h2 class="bluebox header ">On this day...</h2>
-                        <p><strong><a href="#" title="February06">February 6</a></strong></p>
+                        <div class="d-none d-sm-block">
+                          <h2 class="bluebox header">On this day...</h2>
+                          <p><strong><a href="#" title="February06">February 6</a></strong></p>
 
-                        </ul>
-                        <li><a href="#" title="1508">1508</a> – <strong><a href="#" title="Maximilian I">Maximilian I</a></strong> proclaimed Holy Roman Emperor, 1st Emperor in centuries not to be crowned by the Pope.</li>
-                        <li><a href="#" title="1778">1778</a> – France recognizes the United States of America, signing the <strong><a href="#" title="Treaty of Alliance">Treaty of Alliance</a></strong> in Paris, 1st US treaty</li>
-                        <li><a href="#" title="2017">2017</a> – Washington state and Minnesota lawyers told a federal appellate court that restoring <strong><a href="#" title="Travel Ban">President Drumpf’s travel ban</a></strong> on refugees and travelers
-                          from seven predominantly Muslim countries would “unleash chaos again.”</li>
-                        <li><a href="#" title="2018">2018</a> – The <strong><a href="#" title="Wikipedia Rebuild">Wikipedia Rebuild</a></strong> was due on Tuesday, February 7, 2018 at 11:55 pm, Central time.</li>
-                        </ul>
-                        <p>
-                          <strong><a href="#" title="Bartholomäus Sastrow">Bartholomäus Sastrow</a></strong> (d.&#160;1603)&#160;<strong>·</strong>
-                          <strong><a href="#" title="Desmond Doss">Desmond Doss</a></strong> (b.&#160;1919)&#160;<strong>·</strong>
-                          <strong><a href="#" title="Steve Nash">Steve Nash</a></strong> (b.&#160;1974)
-                        </p>
+                          </ul>
+                          <li><a href="#" title="1508">1508</a> – <strong><a href="#" title="Maximilian I">Maximilian I</a></strong> proclaimed Holy Roman Emperor, the first Emperor in centuries not to be crowned by the Pope.</li>
+                          <li><a href="#" title="1778">1778</a> – France recognizes the United States of America, signing the <strong><a href="#" title="Treaty of Alliance">Treaty of Alliance</a></strong> in Paris, the first United States treaty</li>
+                          <li><a href="#" title="2017">2017</a> – Washington state and Minnesota lawyers told a federal appellate court that restoring <strong><a href="#" title="Travel Ban">President Drumpf’s travel ban</a></strong> on refugees and travelers
+                            from seven predominantly Muslim countries would “unleash chaos again.”</li>
+                          <li><a href="#" title="2018">2018</a> – The <strong><a href="#" title="Wikipedia Rebuild">Wikipedia Rebuild</a></strong> was due on Tuesday, February 6, 2018 at 11:55 pm, Central time.</li>
+                          </ul>
+                          <p>
+                            <strong><a href="#" title="Bartholomäus Sastrow">Bartholomäus Sastrow</a></strong> (d.&#160;1603)&#160;<strong>·</strong>
+                            <strong><a href="#" title="Desmond Doss">Desmond Doss</a></strong> (b.&#160;1919)&#160;<strong>·</strong>
+                            <strong><a href="#" title="Steve Nash">Steve Nash</a></strong> (b.&#160;1974)
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    <div class="row ">
+
+                    <!--pink section-->
+                    <div class="row d-none d-sm-block">
                       <div class="col-sm-12 pinkback section ">
                         <h2 class="pinkbox header ">From today's featured list</h2>
                         <p>This has been an interesting exercise. The Wikipedia main page is not built on Bootstrap, so getting close enough to the main page exact layout is a challenge. In building the page Bootstrap style, I chose not to use the exact
@@ -279,14 +306,14 @@
                           art. The analogy holds longer than one might expect, since using Bootstrap to build a Wikipedia page seems much like repainting the classic oil painting using modern acrylics. Doable, but different.</p>
                       </div>
                     </div>
-                    <div class="row ">
+
+                    <!--purple section-->
+                    <div class="row d-none d-sm-block">
                       <div class="col-sm-12 purpleback section ">
                         <h2 class="purplebox header ">Today's featured picture</h2>
                         <div class="container float-left ml-0 mr-0 pt-4 pb-4">
                           <!-- Button to Open the Modal -->
-                          <button type="button" class="btn btn-link p-0 m-0" data-toggle="modal" data-target="#photoModal">
-    <img alt="Wikipedia Main Page" class="float-left" src="../Trikipedia/wikipediasamplepage.png" width="380px" height="285px"/>
-  </button>
+                          <button type="button" class="btn btn-link p-0 m-0" data-toggle="modal" data-target="#photoModal"><img alt="Wikipedia Main Page" class="float-left" src="../Trikipedia/wikipediasamplepage.png" width="380px" height="285px"/></button>
 
                           <!-- The Modal -->
                           <div class="modal fade" id="photoModal">
@@ -317,7 +344,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row d-none d-sm-block">
                       <div class="col-sm-12 section">
                         <h2 class="bottomhead">Other areas of Trikipedia</h2>
                         <ul>
@@ -330,7 +357,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row d-none d-sm-block">
                       <div class="col-sm-12 section">
                         <h2 class="bottomhead">Trikipedia's sister projects</h2>
                         <p>Trikipedia is hosted by <a href="#" title="Toby Ziegler dot com">TobyZiegler.com</a>, a not-making-much-profit dude also hosting none of these other <a href="#" title="daProjects">projects</a>:</p>
@@ -370,7 +397,7 @@
                         </table>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row d-none d-sm-block">
                       <div class="col-sm-12 section">
                         <h2 class="bottomhead">Wikipedia languages</h2>
                         <p>Trikipedia is written in <a href="#" title="English language">English</a>. Created in 2018, it currently has hardly any articles. Many other actual Wikipedias are available; some of the largest are listed below.</p>
