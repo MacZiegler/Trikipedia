@@ -58,16 +58,17 @@ h2 {
 }
 
 .tabnav {
-    font-size: 0.75rem;
+    /*font-size: 0.75rem;*/
+    /*height: 12.0rem;*/
 }
 
 .tabstyle {
     margin-bottom: -3px;
-    padding-top: 0.5rem;
+    padding-top: 0.75rem;
     /*border-radius: 0;*/
     /*border: none;*/
-    border-top: none;
-    border-bottom: none;
+    border-top: 0;
+    border-bottom: 0;
     border-left: 4px solid #a7d7f9;
     border-right: 8px solid #a7d7f9;
     border-image: linear-gradient(#ffffff, #a7d7f9);
@@ -165,6 +166,10 @@ h2 {
     margin-bottom: 0.25rem;
     overflow: auto;
     padding: 0.5rem;
+}
+
+.navpadding {
+    padding: 0.25rem;
 }
 
 .bottomhead {
